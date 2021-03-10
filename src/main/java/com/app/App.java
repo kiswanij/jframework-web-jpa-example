@@ -12,31 +12,31 @@ public class App {
 		JKObjectDataAccess dao = JKDataAccessFactory.getObjectDataAccess();
 
 		//Create JPA object
-		Student student = new Student();
-		student.setNumber("121212");
-		student.setName("Jalal");
-		student.setPhone("123456789");
-		student.setAvg(90.0);
+		Account account = new Account();
+		account.setNumber("121212");
+		account.setName("Jalal");
+		account.setPhone("123456789");
+		account.setAvg(90.0);
 		
 		//insert the object in the database using JPA/Hibernate implementation
-		dao.insert(student);
-		int id=student.getId();
+		dao.insert(account);
+		int id=account.getId();
 		
 		//Retrieve list of objects from database using JPA 
-		List<Student> list = dao.getList(Student.class);
-		for (Student std : list) {
+		List<Account> list = dao.getList(Account.class);
+		for (Account std : list) {
 			System.out.println(std);
 		}
 		
 		//Find an object from database using JPA
-		Student std = dao.find(Student.class, id);
+		Account std = dao.find(Account.class, id);
 		std.setName("Updated Jalal");
 		
 		//update record in the databse
 		dao.update(std);
 		
 		//Delete object from database using an IDE
-		dao.delete(Student.class, id);		
+		dao.delete(Account.class, id);		
 	}
 
 

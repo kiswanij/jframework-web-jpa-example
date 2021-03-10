@@ -5,8 +5,8 @@ import javax.persistence.*;
 import com.jk.util.jpa.BaseEntity;
 
 @Entity
-@Table(name="students")
-public class Student extends BaseEntity {
+@Table(name="account")
+public class Account extends BaseEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -78,6 +78,6 @@ public class Student extends BaseEntity {
 		if (obj == null) {
 			return false;
 		}
-		return this.getId() == ((Student) obj).getId();
+		return this.getId() == ((Account) obj).getId();
 	}
 }
