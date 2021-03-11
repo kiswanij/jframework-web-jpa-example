@@ -4,12 +4,22 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.jalalkiswani</groupId>
 	<version>4.0.4</version>
-	<artifactId>smart-cloud-data-jpa-example</artifactId>
+	<artifactId>smart-cloud-web-jpa-example</artifactId>
+	<packaging>war</packaging>
+	<properties>
+		<smart-cloud.version>4.0.8</smart-cloud.version>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>com.jalalkiswani</groupId>
-			<artifactId>smart-cloud-data</artifactId>
-			<version>4.0.8</version>
+			<artifactId>smart-cloud-webstack</artifactId>
+			<version>${smart-cloud.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jalalkiswani</groupId>
+			<artifactId>smart-cloud-standalone</artifactId>
+			<version>${smart-cloud.version}</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<build>
@@ -23,6 +33,14 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.2.3</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
 		</plugins>
-	</build>	
+	</build>
 </project>
