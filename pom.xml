@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.jalalkiswani</groupId>
-		<artifactId>jk-webapp</artifactId>
+		<artifactId>jk-app-webstack</artifactId>
 		<version>7.0.0-M1</version>
 	</parent>	
 	<artifactId>jk-framework-web-jpa-example</artifactId>
