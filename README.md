@@ -1,7 +1,7 @@
-# JKFramework-WebStack with a JPA Example
+# JFramework-WebStack with a JPA Example
 _Last updated: 2022-11-26_
 
-This repository contains a _JKFramework-WebStack_ that uses relational database engine as persisitnce layer, and uses JPA.
+This repository contains a _JFramework-WebStack_ that uses relational database engine as persisitnce layer, and uses JPA.
 
 ## Prerequisites:
 - JDK 17+ Installed
