@@ -1,5 +1,5 @@
 # JFramework-WebStack with a JPA Example
-_Last updated: 2022-11-26_
+_Last updated: Aug 20, 2025_
 
 This repository contains a _JFramework-WebStack_ that uses relational database engine as persisitnce layer, and uses JPA.
 
